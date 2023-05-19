@@ -32,7 +32,10 @@ const Header = () => {
                 <li>About</li>
                 <li>Categories</li>
             </ul>
-            <div className="center">ITGlobal.</div>
+            <div className="center">
+                <h1>ITGlobal</h1>
+                <p>We Sell Awesome Product.</p>
+                </div>
             <div className="right">
                 <TbSearch />
                 <AiOutlineHeart />

@@ -1,9 +1,51 @@
 @import "../../css-config/mixins.scss";
 
+<<<<<<< HEAD
 .main-content {
     max-width:calc(100% - 20px) ;
     margin: 0 auto;
     @include md {
         max-width: 1200px;
     }
+=======
+.home{
+    height: 2000px;
+}
+
+.slides::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+  }
+  
+  .slides {
+    -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
+    overflow-y: hidden; /* Hide the vertical scrollbar */
+  }
+  
+
+.slides{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: hidden;
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(-200%); }
+  }
+
+.slides > div{
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    animation: slideAnimation 10s infinite;
+}
+
+.slides:nth-child(2){
+    width:400px;
+>>>>>>> 0c0a988002258b44d2ff79d5b82d8051f6f844fc
 }
