@@ -8,9 +8,6 @@ import Category from "../Category/Category";
 import Products from "../Products/Products";
 
 const Home = () => {
-<<<<<<< HEAD
-
-=======
     return (<div className="home">
         <div className="slides">
         <Banner title="SCALE" description="Buy product from our store and get a flat discount upto 30%. " image={img01} />
@@ -22,8 +19,9 @@ const Home = () => {
                     <Category />
                     <Products />
                 </div>
+        </div>
     </div>);
->>>>>>> 0c0a988002258b44d2ff79d5b82d8051f6f844fc
+
 };
 
 export default Home;
